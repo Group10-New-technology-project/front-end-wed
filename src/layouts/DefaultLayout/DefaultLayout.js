@@ -1,6 +1,9 @@
 import Header from '../components/Header';
-import Sidebar from '../components/Sidebar';
-import LoginLayout from '../LoginLayout';
+import Search from '~/layouts/components/Search';
+import CenterLayout from '../CenterLayout';
+
+const cx = classNames.bind(styles);
+
 function DefaultLayout({ children }) {
     return (
         <div>

@@ -5,7 +5,6 @@ import Home from '~/pages/Home';
 import Profile from '~/pages/Profile';
 import Login from '~/pages/Login';
 import SignIn from '~/pages/SignIn';
-
 // Public routes
 const publicRoutes = [
     { path: config.routes.home, component: Home },
