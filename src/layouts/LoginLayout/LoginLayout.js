@@ -1,4 +1,4 @@
-import Header from './Header';
+import Header from '../LoginLayout/Header';
 import './LoginLayout.scss';
 function LoginLayout({ children }) {
     return (
