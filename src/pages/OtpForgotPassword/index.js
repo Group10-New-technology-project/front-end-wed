@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames/bind';
-import styles from './SignIn.module.scss';
+import styles from './OtpForgotPassword.module.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import config from '~/config';
 import { Link } from 'react-router-dom';
@@ -11,66 +11,55 @@ function SignIn(props) {
             <div className="Auth-form-container">
                 <form className="Auth-form">
                     <div className="Auth-form-content">
-                        <h3 className="Auth-form-title fs-1 text-center">Đăng ký</h3>
+                        <h3 className="Auth-form-title fs-1 text-center">Quên mật khẩu</h3>
                         <br />
                         <br />
+
                         <div className="form-group mt-3">
-                            <label>Tên</label>
+                            <label>Mật khẩu mới</label>
                             <input
                                 type="text"
                                 className="form-control form-control-lg mt-1 fs-4"
-                                placeholder="Nhập tên người dùng "
+                                placeholder="Nhập mật khẩu mới"
                             />
                         </div>
 
                         <div className="form-group mt-3">
-                            <label>Tài khoản</label>
+                            <label>Xác nhận mật khẩu </label>
                             <input
-                                type="email"
+                                type="text"
                                 className="form-control form-control-lg mt-1 fs-4"
-                                placeholder="Nhập email hoặc số điện thoại"
-                            />
-                        </div>
-
-                        <div className="form-group mt-3">
-                            <label>Mật khẩu</label>
-                            <input
-                                type="password"
-                                className="form-control form-control-lg mt-1 fs-4 "
-                                placeholder="Nhập mật khẩu"
+                                placeholder="Nhập lại mật khẩu vừa nhập"
                             />
                         </div>
                         <div className="form-group mt-3">
-                            <label>Xác nhận mật khẩu</label>
+                            <label>Xác nhận OTP</label>
                             <input
-                                type="password"
-                                className="form-control form-control-lg mt-1 fs-4 "
-                                placeholder="Nhập lại mật khẩu"
+                                type="text"
+                                className="form-control form-control-lg mt-1 fs-4"
+                                placeholder="Nhập mã OTP"
                             />
                         </div>
 
-                        <Link to={config.routes.otpSignIn} className={cx('button')}>
-                            <div className="d-grid gap-2 mt-3">
-                                <button type="submit" className="btn btn-primary btn-lg">
-                                    <span className="fs-4">Đăng ký</span>
-                                </button>
-                            </div>
-                        </Link>
+                        <div className="d-grid gap-2 mt-3">
+                            <button type="submit" className="btn btn-primary btn-lg">
+                                <span className="fs-4">Xác nhận </span>
+                            </button>
+                        </div>
                         <br />
                         <Link to={config.routes.home} className={cx('link')}>
                             <p className="forgot-password text-center mt-2 text-decoration-none text-primary fs-5">
                                 Trang chủ
                             </p>
                         </Link>
-
                         <Link to={config.routes.login} className={cx('link')}>
                             <p className="forgot-password text-center mt-2 text-decoration-none text-primary fs-5">
                                 Đăng nhập
                             </p>
                         </Link>
-                        <Link to={config.routes.forgotPassword} className={cx('link')}>
+                        <Link to={config.routes.signIn} className={cx('link')}>
                             <p className="forgot-password text-center mt-2 text-decoration-none text-primary fs-5">
-                                Quên mật khẩu?
+                                Bạn chưa có tài khoản?
                             </p>
                         </Link>
                     </div>
