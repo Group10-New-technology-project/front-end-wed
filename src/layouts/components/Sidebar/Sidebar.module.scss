@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    // margin-left: 10px;
+    font-size: 15px;
+    font-family: 400px;
+    border-bottom: 1px solid rgb(155, 154, 154);
+}
+
+.btn-all,
+.btn-readNo,
+.btn-more {
+    margin-left: 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    &:focus {
+        color: blue;
+        border-bottom: 1px solid blue;
+        transition: border-bottom 0.1s ease;
+    }
+}
+
+.btn-more {
+    margin-left: 150px;
+}
