@@ -1,7 +1,21 @@
-// .wrapper {
-//     display: flex;
-//     // font-size: 62.5%;
-//     // background-color: #a5dbf4;
-//     font-family: 'Roboto', sans-serif;
-//     line-height: 1.5;
+.wrapper {
+    // font-size: 62.5%;
+    background-color: #97e0ef;
+    // font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+    padding-left: 15rem;
+    align-items: center;
+}
+.content {
+    background-color: #f7f7f7;
+    width: 1000px;
+    height: 570px;
+    margin-left: 8rem;
+}
+// .container {
+//     width: 1300px;
+//     height: 516px;
+//     background-color: #e67e39;
 // }
