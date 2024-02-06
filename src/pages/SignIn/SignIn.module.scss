@@ -1,24 +1,13 @@
-// @import 'normalize.css';
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-
-// * {
-//     box-sizing: border-box;
-// }
-// body {
-//     margin: auto;
-
-//     width: 1000px;
-//     height: 580px;
-//     font-size: 1.6rem;
-// }
-
-// h3 {
-//     text-align: center;
-// }
-
-// .Auth-form {
-//     margin-left: 35rem;
-// }
-// .Auth-form-container {
-//     margin-top: -7rem;
-// }
+.wrapper {
+    background-color: #ffffff;
+    margin-left: 45rem;
+    padding-right: 7rem;
+    padding-top: 2rem;
+}
+.button {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+.link {
+    text-decoration: none;
+}
