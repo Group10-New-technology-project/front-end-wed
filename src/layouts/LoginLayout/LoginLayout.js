@@ -1,11 +1,11 @@
-import Header from '../LoginLayout/Header';
+import Header from './Header';
 import './LoginLayout.scss';
 function LoginLayout({ children }) {
     return (
-        <div>
+        <div className={cx('wrapper')}>
             <Header />
-            <div className="container">
-                <div className="content">{children}</div>
+            <div className={cx('container')}>
+                <div className={cx('content')}>{children}</div>
             </div>
         </div>
     );
