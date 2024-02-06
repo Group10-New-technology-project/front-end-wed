@@ -1,6 +1,6 @@
 import Header from '../components/Header';
 import Sidebar from '../components/Sidebar';
-
+import LoginLayout from '../LoginLayout';
 function DefaultLayout({ children }) {
     return (
         <div>
