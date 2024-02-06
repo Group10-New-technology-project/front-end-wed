@@ -1,13 +1,18 @@
-// Header.js
+import classNames from 'classnames/bind';
+import styles from './Header.module.scss';
+
 import React from 'react';
-import './Header.scss';
+
+const cx = classNames.bind(styles);
 function Header() {
     return (
-        <img
-            src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-            className="imgEdit"
-            alt="Sample"
-        />
+        <div className={cx('wrapper')}>
+            <img
+                className={cx('image')}
+                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
+                alt="Sample"
+            />
+        </div>
     );
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './SignIn.scss';
+import './SignIn.module.scss';
 function SignIn(props) {
     return (
         <div className="Auth-form-container">
