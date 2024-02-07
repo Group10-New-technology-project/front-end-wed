@@ -1,0 +1,10 @@
+.info {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các request xuống dòng khi không đủ không gian */
+
+    align-items: center;
+}
+.info > * {
+    margin: 10px; /* Khoảng cách giữa các Request */
+    align-items: center;
+}

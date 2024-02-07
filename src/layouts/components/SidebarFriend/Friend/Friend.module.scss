@@ -1,4 +1,6 @@
 .wrapper {
+    // background-color: aqua;
+    width: 105rem;
 }
 
 .container {
@@ -17,11 +19,14 @@
 }
 
 .info {
-}
-
-.info-item {
     display: flex;
     justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(208, 208, 208);
 }
 
 .name {
@@ -29,17 +34,6 @@
     font-family: 600;
 }
 
-.time {
-    font-size: 12px;
-    font-family: 600;
-    margin-left: 120px;
-}
-
-.content {
-    font-size: 14px;
-    color: rgb(114, 116, 117);
-    margin-right: 10px;
-}
-.message {
-    margin-left: 5px;
+.btn-more {
+    border: none;
 }
