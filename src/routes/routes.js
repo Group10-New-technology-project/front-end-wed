@@ -9,7 +9,9 @@ import config from '~/config';
 import OtpSignIn from '~/pages/OtpSignIn';
 import ForgotPassword from '~/pages/ForgotPassword';
 import OtpForgotPassword from '~/pages/OtpForgotPassword';
-
+import ContactListFriend from '~/pages/ContactListFriend';
+import ContactListGroup from '~/pages/ContactListGroup';
+import ContactRequest from '~/pages/ContactRequest';
 // Public routes
 const publicRoutes = [
     { path: config.routes.home, component: Home },
@@ -19,6 +21,9 @@ const publicRoutes = [
     { path: config.routes.otpSignIn, component: OtpSignIn, layout: LoginLayout },
     { path: config.routes.forgotPassword, component: ForgotPassword, layout: LoginLayout },
     { path: config.routes.otpForgotPassword, component: OtpForgotPassword, layout: LoginLayout },
+    { path: config.routes.contactListFriend, component: ContactListFriend },
+    { path: config.routes.contactListGroup, component: ContactListGroup },
+    { path: config.routes.contactRequest, component: ContactRequest },
 ];
 
 const privateRoutes = [];

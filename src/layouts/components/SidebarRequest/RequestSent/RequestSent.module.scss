@@ -1,0 +1,62 @@
+/* Request.module.scss */
+
+.wrapper {
+    display: flex;
+    justify-content: center; /* Canh giữa nội dung */
+}
+
+.container {
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ không gian */
+    max-width: 800px; /* Đặt chiều rộng tối đa cho container */
+    margin: 0 auto; /* Canh giữa container */
+}
+
+.info {
+    flex: 0 0 33.33%; /* Mỗi info chiếm 1/3 chiều rộng của container */
+    padding: 20px; /* Khoảng cách giữa các info */
+    box-sizing: border-box; /* Đảm bảo padding không tăng kích thước của phần tử */
+    text-align: center; /* Căn giữa nội dung trong info */
+}
+
+.user-avatar {
+    width: 150px; /* Kích thước ảnh đại diện */
+    height: 150px;
+    border-radius: 50%; /* Bo tròn ảnh đại diện */
+    margin-bottom: 10px; /* Khoảng cách giữa ảnh đại diện và tên */
+}
+
+.name {
+    font-size: 20px; /* Kích thước chữ tên */
+}
+
+.btn-more {
+    border: none; /* Loại bỏ border của button */
+    background: none; /* Loại bỏ background của button */
+    cursor: pointer; /* Đổi con trỏ chuột thành kiểu pointer khi di chuột qua button */
+    font-size: 24px; /* Kích thước của icon */
+    margin-top: 10px; /* Khoảng cách giữa tên và button */
+}
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các phần tử xuống dòng khi không đủ không gian */
+    max-width: 800px; /* Đặt chiều rộng tối đa cho container */
+    margin: 0 auto; /* Canh giữa container */
+    justify-content: center; /* Canh giữa các phần tử theo chiều ngang */
+}
+
+.info {
+    flex: 0 0 calc(33.33% - 20px); /* Mỗi info chiếm 1/3 chiều rộng của container */
+    padding: 20px; /* Khoảng cách giữa các info */
+    box-sizing: border-box; /* Đảm bảo padding không tăng kích thước của phần tử */
+    text-align: center; /* Căn giữa nội dung trong info */
+}
+.btn-more > * {
+    margin: 10px; /* Khoảng cách giữa các Request */
+    align-items: center;
+}
+.accept {
+    color: green;
+}
+.refuse {
+    color: red;
+}
