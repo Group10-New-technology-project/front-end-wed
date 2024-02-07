@@ -17,12 +17,22 @@ function Sidebar() {
                 </button>
             </div>
 
-            <Message />
-            <Message />
-            <Message />
-            <Message />
-            <Message />
-            <Message />
+            <div className={cx('message')}>
+                <Message />
+                <Message />
+                <Message />
+                <Message />
+                <Message />
+                <Message />
+
+                <Message />
+                <Message />
+                <Message />
+
+                <Message />
+                <Message />
+                <Message />
+            </div>
         </div>
     );
 }

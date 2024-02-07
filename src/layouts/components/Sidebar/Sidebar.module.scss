@@ -1,13 +1,22 @@
 .wrapper {
+    height: var(--max--height-sidebar);
     display: flex;
     flex-direction: column;
+    font-family: var(--font-family);
 }
 
 .header {
-    // margin-left: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     font-size: 15px;
-    font-family: 400px;
+    font-weight: 400px;
+    background-color: white;
     border-bottom: 1px solid rgb(155, 154, 154);
+}
+
+.message {
+    overflow-y: auto;
 }
 
 .btn-all,
@@ -25,5 +34,5 @@
 }
 
 .btn-more {
-    margin-left: 150px;
+    margin-left: 130px;
 }
