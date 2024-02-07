@@ -2,6 +2,7 @@
     display: flex;
     max-width: var(--max-width);
     height: var(--max-height);
+    font-family: var(--font-family);
 }
 
 .header {
@@ -13,4 +14,5 @@
 .container {
     width: 346px;
     background-color: white;
+    border-right: 1px solid rgb(155, 154, 154);
 }

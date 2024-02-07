@@ -5,6 +5,10 @@
     --primary: #fe2c55;
     --max-width: 1536px;
     --max-height: 736px;
+
+    --font-family: 'IBM Plex Sans', sans-serif;
+
+    --max--height-sidebar: 664px;
 }
 * {
     box-sizing: border-box;
@@ -13,13 +17,28 @@
 html {
     font-size: 62.5%;
 }
+//Scrollbar CSS
+html ::-webkit-scrollbar {
+    border-radius: 0px;
+    width: 8px;
+}
+
+html ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(56, 56, 58, 0.06);
+}
+
+html ::-webkit-scrollbar-track {
+    border-radius: 0px;
+    background-color: rgba(54, 48, 48, 0);
+}
 
 body {
     width: 100vw;
     height: 100vh;
     max-width: var(--max-width);
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
     font-size: 1.6rem;
     line-height: 1.5;
 }
