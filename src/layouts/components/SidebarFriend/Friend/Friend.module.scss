@@ -1,0 +1,39 @@
+.wrapper {
+    // background-color: aqua;
+    width: 105rem;
+}
+
+.container {
+    display: flex;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(208, 208, 208);
+}
+
+.name {
+    font-size: 17px;
+    font-family: 600;
+}
+
+.btn-more {
+    border: none;
+}
