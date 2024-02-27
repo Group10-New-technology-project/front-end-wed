@@ -4,7 +4,10 @@
 :root {
     --primary: #fe2c55;
     --max-width: 1536px;
-    --max-height: 690px;
+    --max-height: 736px;
+
+    --font-family: 'IBM Plex Sans', sans-serif;
+    --max--height-sidebar: 664px;
 }
 * {
     box-sizing: border-box;
