@@ -2,7 +2,6 @@
     height: var(--max--height-sidebar);
     display: flex;
     flex-direction: column;
-    font-family: var(--font-family);
 }
 
 .header {
@@ -35,4 +34,51 @@
 
 .btn-more {
     margin-left: 130px;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+.title {
+    font-size: 17px;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.unread {
+    color: white;
+    font-family: 900;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 0px 6px 0px 6px;
+    margin-right: 5px;
+    background-color: rgb(190, 18, 18);
+    position: absolute;
+    right: 0;
+    top: 60%;
+}
+.sub-title {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.hidden {
+    display: none;
+}
+.sub-title1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60%;
+}
+.subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 40%;
 }

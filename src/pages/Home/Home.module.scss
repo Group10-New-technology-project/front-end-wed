@@ -112,53 +112,11 @@
     background-color: rgb(230, 230, 230);
     overflow-y: auto;
     overflow-x: hidden;
+    padding: 20px;
 
-    .chat-container {
-        display: flex;
-        flex-direction: row;
-        width: 1100px;
-        margin: 10px;
-        border-radius: 8px;
-    }
-
-    .img-content {
-        width: 45px;
-        height: 45px;
-        margin: 10px 10px;
-        margin-top: -20px;
-        object-fit: cover;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-
-    //Header
-    .message-header {
-        display: flex;
-        flex-direction: row;
-    }
-    .long-message {
-        max-width: 450px;
-        word-wrap: break-word;
-    }
-    ///end
-    .chat-messages {
-        display: flex;
-        flex-direction: column;
-        width: 1100px;
-        border-radius: 8px;
-    }
-
-    .message {
-        margin-bottom: 10px;
-        padding: 8px;
-        border-radius: 8px;
-    }
-
-    .sender {
-        align-self: flex-end;
-    }
-    .receiver {
-        align-self: flex-start;
+    .avatar {
+        width: 100px;
+        height: 100px;
     }
 }
 
@@ -189,9 +147,10 @@
     }
 
     .footer-chat {
+        display: flex;
+        flex-direction: row;
         height: 60px;
         border-top: 1px solid rgb(155, 154, 154);
-        background-color: rgb(233, 11, 11);
         margin: auto;
 
         .input {
@@ -204,14 +163,43 @@
             font-weight: 300;
         }
 
-        input:focus {
+        .input:focus + .footer-chat {
+            border-top: 1px solid rgb(34, 122, 238);
+        }
+        .input:focus {
+            border-top: 1px solid rgb(34, 122, 238);
             outline: none;
             border: none;
-            border-top: 1px solid rgb(34, 122, 238);
         }
     }
 }
 
+.footer-chat-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    button {
+        height: 40px;
+        width: 40px;
+        padding: 2px 5px 2px 5px;
+        margin: 2px;
+        font-size: 17px;
+        border: none;
+        background-color: transparent;
+    }
+    button:hover {
+        background-color: rgb(165, 165, 165);
+    }
+    .btn-send {
+        margin-right: 20px;
+        color: blue;
+        font-weight: bold;
+    }
+    .btn-send:hover {
+        background-color: rgb(222, 235, 255);
+    }
+}
 .tippy {
     font-size: 11px;
     width: max-content;
