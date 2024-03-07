@@ -1,6 +1,6 @@
 import classNames from 'classnames/bind';
 import 'react-chat-elements/dist/main.css';
-import { ChatItem, ChatList } from 'react-chat-elements';
+import { ChatItem } from 'react-chat-elements';
 import styles from './Sidebar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons';
@@ -167,6 +167,7 @@ function Sidebar() {
             <div className={cx('message')}>
                 {messages.map((message, index) => (
                     <ChatItem
+                        className={cx('message-item')}
                         key={index}
                         avatar={message.avatar}
                         alt={message.alt}
